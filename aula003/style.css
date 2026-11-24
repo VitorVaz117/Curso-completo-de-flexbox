@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Space+Grotesk:wght@300..700&family=Sriracha&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Space Grotesk", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    height: 80px;
+    background-color: #3c4879;
+}
+
+.container{
+    height: 100%;
+    width: 900px;
+    display: flex;/*por padrao é flex-direction: row*/
+    margin: auto; /*centraliza a logo menu e entrar*/
+}
+
+.logo{
+    width: 20%;/*a logo terá 20% da largura do elemento pai*/
+    height: 100%;/*100% da altura do elemento pai*/
+}
+
+.menu{
+    width: 60%;/*o menu terá 60% da largura do elemento pai*/
+    height: 100%;/*100% da altura do elemento pai*/
+}
+
+.entrar{
+    width: 20%;/*a entrar terá 20% da largura do elemento pai*/
+    height: 100%;/*100% da altura do elemento pai*/
+}
+
+.logo{
+    display: flex;/*Libera as duas propriedade abaixo*/
+    justify-content: center; /*alinha na horizontal*/
+    align-items: center; /*alinha na vertical*/
+}
+
+.logo img{
+    width: 150px;
+}
+
+ul{
+    display: flex;
+    justify-content: center; /*alinha na horizontal*/
+    /*align-items: center; Nesse caso NAO alinha na vertical, pq o nav não
+    está com a altura total do header. Para resolver isso colocamos a tag nav com altura de 100%* E tmb aumentamos a altura da tag ul*/
+    align-items: center;
+    height: 100%;
+    gap: 5px;/*Espaço entre os li s (esse gap é liberado com o display: flex*/
+}
+
+nav{
+    height: 100%;
+}
+
+li{
+    list-style: none;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer; /*muda a imagem do cursor ao passar por cima*/
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+li:hover{
+    background-color: white;
+    color: #3c4879;
+}
+
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-entrar{
+    display: flex;/*icone do lado do paragráfo(entrar)*/
+    justify-content: center;/*icone e paragrafo(entrar) centralizado horizontalmente*/
+    align-items: center;/*icone e paragrafo(entrar) centralizado verticalmente*/
+    gap: 10px;
+    color: white;
+    padding: 15px 25px;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-entrar:hover{
+    background-color: white;
+    color: #3c4879;
+}
